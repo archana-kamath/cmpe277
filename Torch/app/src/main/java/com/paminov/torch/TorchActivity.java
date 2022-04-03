@@ -128,7 +128,7 @@ public class TorchActivity extends Activity implements SensorEventListener {
         TextView sensor_reading = findViewById(R.id.sensor_reading);
         sensor_reading.setText(String.format("%s lux",  event.values[0] ));
 
-        if (event.values[0] < 25) {
+        if (event.values[0] < 2.5) {
             turnLightOn();
         } else {
             turnLightOff();
